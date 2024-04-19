@@ -97,7 +97,7 @@ This Javascript checks if l is not an empty string. If not then the "l" variable
 ### Trying it
 ![Screenshot 2024-04-19 235151](https://github.com/DenizBaskan/parrot-ai-bypass/assets/119546222/f4952cdd-37bf-4682-a883-41fd774051e9)
 
-Wow! It seems like it worked, the video was sent through and we were not hit with a generation limit. We can now modify the request code to always prefix the user id with a pro or just make the user id "pro", that works too.
+Wow! It seems like it worked, the video was sent through and we were not hit with a generation limit. We can now modify the request code to always prefix the user id with "pro" or just make the user id "pro", that works too.
 
 ### Modifying the request to always be pro
 ![Screenshot 2024-04-20 000855](https://github.com/DenizBaskan/parrot-ai-bypass/assets/119546222/81605e50-6b3b-4c75-848e-4acf31f17e25)
@@ -112,7 +112,7 @@ I then searched the Javascript for the message in the alert "Oops. You exceeded"
 ### Character limit check
 ![Screenshot 2024-04-19 235801](https://github.com/DenizBaskan/parrot-ai-bypass/assets/119546222/95216892-b2c4-4258-a298-318c261afa32)
 
-This code runs when the varaible is changed hence "onChange". The length of the prompt is checked and if it exceeds 100 then an alert is thrown. Quite comedically, we can just commenet out the if statement removing the check.
+This code runs when the varaible is changed hence "onChange". The length of the prompt is checked and if it exceeds 100 then an alert is thrown. Quite comedically, we can just comment out the if statement removing the check.
 
 ### Commenting out the check
 ![Screenshot 2024-04-19 235919](https://github.com/DenizBaskan/parrot-ai-bypass/assets/119546222/5daba4a6-5db8-44c6-9215-5006ec4b9289)
@@ -130,8 +130,8 @@ Parrot AI sends requests without videos and requests with deepfake videos in two
 
 As you can see the request has no "skipWatermark" field. As far as I am aware you cannot remove watermark on non-video prompts when using the site regularly however you can just modify the request and add the field in and it works. The watermark is removed.
 
-### Bypassing "remove watermark" on non-video prompt
-![Screenshot 2024-04-20 001455](https://github.com/DenizBaskan/parrot-ai-bypass/assets/119546222/c7dafef9-dc54-47ad-a9da-0470399df141)
+### Bypassing "remove watermark" and generation limit on non-video prompt
+![Screenshot 2024-04-20 002735](https://github.com/DenizBaskan/parrot-ai-bypass/assets/119546222/b5c280f6-3bed-4c81-8707-5a187a597022)
 
 ## Conclusion <a name="7"></a>
-In doing this I was quite shocked to see that Parrot AI seems to do no server checks at all. These bypasses were quite trivial to find. Having such poor security for the most basic of features like this is quite poor especially in the current year. 
+Through doing all of this we have modified our Javascript so that we have no restrictions on the site. We can send unlimited character prompts, send as many prompts without being ratelimited and remove the watermark without even having a subscription. In doing this I was quite shocked to see that Parrot AI seems to do no server checks at all. These bypasses were quite trivial to find. Having such poor security for the most basic of features like this is quite poor especially in the current year. 
