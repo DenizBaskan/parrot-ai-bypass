@@ -1,5 +1,5 @@
 # Parrot AI bypass
-A runthrough on a flaw I discovered in tryparrotai.com that allows you to access all pro features. This writeup is quite easy to follow through and actions covered are quite trivial.
+A runthrough on flaws I discovered in tryparrotai.com that allows you to access all pro features. This writeup is quite easy to follow through and actions covered are quite trivial.
 ### Disclaimer
 > I am not responsible for your actions committed with the information discussed here. This article is made for educational purposes only.
 
