@@ -92,7 +92,7 @@ l && (s = "proWeb" + l),
 console.log("userId: ", s);
 ```
 
-This Javascript checks if l is not an empty string. If not then the "l" variable is concatentated with the "s" variable (the userId). This would form something like this if the user was logged in with pro "proWebxxxxxxxxx". It was then where I had a silly idea. Perhaps the server only checks the prefix of the userId to see if it is "pro". If that is the prefix then the server assumes the user is pro. Lets try it!
+This Javascript checks if l is not an empty string. If not then the "l" variable is concatentated with the "proWeb" to form an authenticated user id. This would form something like this if the user was logged in with pro "proWebxxxxxxxxx". It was then where I had a silly idea. Perhaps the server only checks the prefix of the userId to see if it is "pro". If that is the prefix then the server assumes the user is pro. Lets try it!
 
 ### Trying it
 ![Screenshot 2024-04-19 235151](https://github.com/DenizBaskan/parrot-ai-bypass/assets/119546222/f4952cdd-37bf-4682-a883-41fd774051e9)
